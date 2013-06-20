@@ -1,0 +1,62 @@
+/* Margins / paddings
+   ========================================================================== */
+
+#MARGIN-NONE,
+.module1,
+.module2,
+.margin-none {
+  margin: 0;
+}
+
+#STANDARD-PADDING,
+.module1,
+.module2,
+.standard-padding {
+  padding: 20px;
+}
+
+/* Backgrounds
+   ========================================================================== */
+
+#BACKGROUND-COLOR-1,
+.module1,
+.background-color-1 {
+  background-color: $color1;
+}
+
+#BACKGROUND-COLOR-2,
+.module2,
+.background-color-2 {
+  background-color: $color2;
+}
+
+
+/* Borders
+   ========================================================================== */
+
+#BORDER-COLOR-1,
+.module2,
+.border-color-1 {
+  border: 3px solid $color1;
+}
+
+#BORDER-COLOR-2,
+.module1,
+.border-color-2 {
+  border: 3px solid $color2;
+}
+
+/* Effects
+   ========================================================================== */
+
+#SHADOW-TOP-LEFT-INSET,
+.module1,
+.shadow-top-left-inset {
+  @include box-shadow(inset 5px 5px 0px 0px $color2);
+}
+
+#GRADIENT-LIGHT,
+.module2,
+.gradient-light {
+  @include background-image(linear-gradient(top, rgba(255,255,255,0.6), rgba(0,0,0,0)));
+}

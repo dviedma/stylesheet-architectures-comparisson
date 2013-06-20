@@ -1,0 +1,16 @@
+.module2 {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  right: 100px;
+  bottom: 100px;
+}
+
+@media (max-width: 600px) {
+  .module2 {
+    width: 100px;
+    height: 100px;
+    bottom: 0;
+    right:0;
+  }
+}

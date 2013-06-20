@@ -1,0 +1,18 @@
+/* Actual theming
+   ========================================================================== */
+
+.module1 {
+  margin: 0;
+  background-color: $color1;
+  @include border-color($color2);
+  @include shadow-top-left-inset($color3);
+  @extend %standard-padding;
+}
+
+.module2 {
+  margin: 0;
+  background-color: $color2;
+  @include border-color($color1);
+  @extend %gradient-light;
+  @extend %standard-padding;
+}

@@ -1,0 +1,95 @@
+.module1 {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  left: 100px;
+  top: 100px;
+}
+
+@media (max-width: 600px) {
+  .module1 {
+    width: 100px;
+    height: 100px;
+    top: 0;
+    left: 0;
+  }
+}
+.module2 {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  right: 100px;
+  bottom: 100px;
+}
+
+@media (max-width: 600px) {
+  .module2 {
+    width: 100px;
+    height: 100px;
+    bottom: 0;
+    right: 0;
+  }
+}
+/* Margins / paddings
+   ========================================================================== */
+#MARGIN-NONE,
+.module1,
+.module2,
+.margin-none {
+  margin: 0;
+}
+
+#STANDARD-PADDING,
+.module1,
+.module2,
+.standard-padding {
+  padding: 20px;
+}
+
+/* Backgrounds
+   ========================================================================== */
+#BACKGROUND-COLOR-1,
+.module1,
+.background-color-1 {
+  background-color: red;
+}
+
+#BACKGROUND-COLOR-2,
+.module2,
+.background-color-2 {
+  background-color: blue;
+}
+
+/* Borders
+   ========================================================================== */
+#BORDER-COLOR-1,
+.module2,
+.border-color-1 {
+  border: 3px solid red;
+}
+
+#BORDER-COLOR-2,
+.module1,
+.border-color-2 {
+  border: 3px solid blue;
+}
+
+/* Effects
+   ========================================================================== */
+#SHADOW-TOP-LEFT-INSET,
+.module1,
+.shadow-top-left-inset {
+  -webkit-box-shadow: inset 5px 5px 0px 0px blue;
+  -moz-box-shadow: inset 5px 5px 0px 0px blue;
+  box-shadow: inset 5px 5px 0px 0px blue;
+}
+
+#GRADIENT-LIGHT,
+.module2,
+.gradient-light {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255, 255, 255, 0.6)), color-stop(100%, rgba(0, 0, 0, 0)));
+  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.6), rgba(0, 0, 0, 0));
+  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.6), rgba(0, 0, 0, 0));
+  background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.6), rgba(0, 0, 0, 0));
+  background-image: linear-gradient(top, rgba(255, 255, 255, 0.6), rgba(0, 0, 0, 0));
+}

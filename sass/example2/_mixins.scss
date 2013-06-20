@@ -1,0 +1,16 @@
+
+@mixin border-color($color) {
+  border: 3px solid $color;
+}
+
+@mixin shadow-top-left-inset($color) {
+  @include box-shadow(inset 5px 5px 0px 0px $color);
+}
+
+%gradient-light {
+  @include background-image(linear-gradient(top, rgba(255,255,255,0.6), rgba(0,0,0,0)));
+}
+
+%standard-padding {
+  padding: 20px;
+}

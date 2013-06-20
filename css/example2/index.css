@@ -1,0 +1,60 @@
+.module1 {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  left: 100px;
+  top: 100px;
+}
+
+@media (max-width: 600px) {
+  .module1 {
+    width: 100px;
+    height: 100px;
+    top: 0;
+    left: 0;
+  }
+}
+.module2 {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  right: 100px;
+  bottom: 100px;
+}
+
+@media (max-width: 600px) {
+  .module2 {
+    width: 100px;
+    height: 100px;
+    bottom: 0;
+    right: 0;
+  }
+}
+.module2 {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255, 255, 255, 0.6)), color-stop(100%, rgba(0, 0, 0, 0)));
+  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.6), rgba(0, 0, 0, 0));
+  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.6), rgba(0, 0, 0, 0));
+  background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.6), rgba(0, 0, 0, 0));
+  background-image: linear-gradient(top, rgba(255, 255, 255, 0.6), rgba(0, 0, 0, 0));
+}
+
+.module1, .module2 {
+  padding: 20px;
+}
+
+/* Actual theming
+   ========================================================================== */
+.module1 {
+  margin: 0;
+  background-color: red;
+  border: 3px solid blue;
+  -webkit-box-shadow: inset 5px 5px 0px 0px green;
+  -moz-box-shadow: inset 5px 5px 0px 0px green;
+  box-shadow: inset 5px 5px 0px 0px green;
+}
+
+.module2 {
+  margin: 0;
+  background-color: blue;
+  border: 3px solid red;
+}
