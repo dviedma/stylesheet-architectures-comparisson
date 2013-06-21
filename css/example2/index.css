@@ -30,16 +30,22 @@
     right: 0;
   }
 }
+/* Borders
+   ========================================================================== */
+/* Margins / paddings
+   ========================================================================== */
+.module1, .module2 {
+  padding: 20px;
+}
+
+/* Effects
+   ========================================================================== */
 .module2 {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255, 255, 255, 0.6)), color-stop(100%, rgba(0, 0, 0, 0)));
   background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.6), rgba(0, 0, 0, 0));
   background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.6), rgba(0, 0, 0, 0));
   background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.6), rgba(0, 0, 0, 0));
   background-image: linear-gradient(top, rgba(255, 255, 255, 0.6), rgba(0, 0, 0, 0));
-}
-
-.module1, .module2 {
-  padding: 20px;
 }
 
 /* Actual theming
